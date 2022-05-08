@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T(h)ree Quotes - Daily</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Love+Ya+Like+A+Sister&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- nav -->
+    <header>
+      <div class="header-wrapper">
+        <a href="index.html" class="brand-name">T(h)ree Quotes</a>
+        <nav class="nav-container">
+          <!--invisible dropdown menu for media queries starts here-->
+          <div class="dropdown">
+            <button class="dropbtn">Menu<i class="lni lni-chevron-right"></i></button>
+            <div class="dropdown-content">
+              <a href="index.html">Daily Quote</a>
+              <a href="randomquote.html">Random Quote</a>
+              <a class="about-link" href="about.html">About</a>
+            </div>
+          </div>
+          <!--invisible dropdown menu for media queries ends here-->
+          <ul class="nav-links">
+            <li class="link">
+              <a class="active-link" href="index.html">DAILY QUOTE</a>
+            </li>
+            <li class="link">
+              <a class="inactive-link" href="randomquote.html">RANDOM QUOTE</a>
+            </li>
+            <li class="link">
+              <a class="inactive-link" href="about.html">ABOUT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- top-section -->
+    <main>
+      <div class="main-wrapper">
+        <div class="quote-container daily-quote fade-in">
+          <h1 class="quote-title">Quote of the Day</h1>
+          <p id="main-quote-text" class="quote-text">
+            “The people who are crazy enough to think they can change the world are the ones who do.”
+          </p>
+          <div class="quote-bottom">
+            <div class="sns-container">
+              <a class="social-icon fullscreen-icon"><ion-icon name="albums"></ion-icon></a>
+              <a class="social-icon" href="" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a class="social-icon" href="" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a class="social-icon" href="" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+            <h2 id="main-quote-author" class="quote-author">Steve Jobs</h2>
+          </div>
+        </div>
+        <!-- Pop up starts here -->
+        <div class="pop-up">
+          <div class="quote-pop-up inactive">
+            <div class="quote-container daily-quote">
+              <p id="alt-quote-text" class="quote-text-alt">
+                “The people who are crazy enough to think they can change the world are the ones who do.”
+              </p>
+              <div class="author-container">
+                <h2 id="alt-quote-author" class="quote-author">Steve Jobs</h2>
+              </div>
+            </div>
+            <ion-icon class="pop-up-image pop-up-icon" name="image-outline"></ion-icon>
+            <ion-icon class="pop-up-color pop-up-icon" name="water-outline"></ion-icon>
+            <ion-icon class="close pop-up-icon" name="close-outline"></ion-icon>
+          </div>
+        </div>
+        <!-- Pop up ends here -->
+      </div>
+    </main>
+    <!-- bottom-section-->
+    <section class="favourites-section">
+      <div class="favourites-wrapper">
+        <h1 class="favourites-title">Our personal favourites</h1>
+        <div class="favourites-cards-container fade-in">
+          <!-- button left for carousel start here -->
+          <div class="button-left-container">
+            <button onclick="changeFavQuote()" class="button-left">
+              <i class="lni lni-chevron-left"></i>
+            </button>
+          </div>
+          <!-- button left for carousel end here -->
+          <div class="quote-card-favourite fav-1 pop-out">
+            <p class="quote-text fav-quote-text">
+              “The greatest glory in living lies not in never falling, but in rising every time we fall.”
+            </p>
+            <h2 class="quote-author fav-quote-author">Nelson Mandela</h2>
+          </div>
+          <!-- button right for carousel start here -->
+          <div class="button-right-container">
+            <button class="button-right" onclick="changeFavQuote()"><i class="lni lni-chevron-right"></i></button>
+          </div>
+          <!-- button right for carousel end here -->
+          <div class="quote-card-favourite fav-2 pop-out">
+            <p class="quote-text">“The future belongs to those who believe in the beauty of their dreams.”</p>
+            <h2 class="quote-author">Eleanor Roosevelt</h2>
+          </div>
+          <div class="quote-card-favourite fav-3 pop-out">
+            <p class="quote-text">“Tell me and I forget. Teach me and I remember. Involve me and I learn.”</p>
+            <h2 class="quote-author">Benjamin Franklin</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container index-footer">
+        <p class="paragraph">Group T(h)ree 2022 ©</p>
+      </div>
+    </footer>
+    <div class="preload-1 preload-2 preload-3 preload-4 preload-5"></div>
+
+    <script src="script.js"></script>
+
+    <!-- icon packages -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
